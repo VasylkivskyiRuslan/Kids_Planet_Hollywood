@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'HeliosCondC';
+  src: url('HeliosCondC.eot?#iefix') format('embedded-opentype'),  url('HeliosCondC.otf')  format('opentype'),
+	     url('HeliosCondC.woff') format('woff'), url('HeliosCondC.ttf')  format('truetype'), url('HeliosCondC.svg#HeliosCondC') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

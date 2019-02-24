@@ -1,0 +1,43 @@
+@font-face{
+    font-family: 'AdigianaUltra';
+    src: url('../fonts/AdigianaUltra/AdigianaUltra.eot');
+    src: url('../fonts/AdigianaUltra/AdigianaUltra.eot?iefix') format('embedded-opentype'),
+    url('../fonts/AdigianaUltra/AdigianaUltra.woff') format('woff'),
+    url('../fonts/AdigianaUltra/AdigianaUltra.ttf') format('truetype'),
+    url('../fonts/AdigianaUltra/AdigianaUltra.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'HeliosCond-Bold';
+    src: url('../fonts/HeliosCond-Bold/HeliosCond-Bold.eot');
+    src: url('../fonts/HeliosCond-Bold/HeliosCond-Bold.eot?iefix') format('embedded-opentype'),
+    url('../fonts/HeliosCond-Bold/HeliosCond-Bold.woff') format('woff'),
+    url('../fonts/HeliosCond-Bold/HeliosCond-Bold.ttf') format('truetype'),
+    url('../fonts/HeliosCond-Bold/HeliosCond-Bold.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'HeliosCondC';
+    src: url('../fonts/HeliosCondC/HeliosCondC.eot');
+    src: url('../fonts/HeliosCondC/HeliosCondC.eot?iefix') format('embedded-opentype'),
+    url('../fonts/HeliosCondC/HeliosCondC.woff') format('woff'),
+    url('../fonts/HeliosCondC/HeliosCondC.ttf') format('truetype'),
+    url('../fonts/HeliosCondC/HeliosCondC.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'LuckiestGuy-Regular';
+    src: url('../fonts/LuckiestGuy-Regular/LuckiestGuy-Regular.eot');
+    src: url('../fonts/LuckiestGuy-Regular/LuckiestGuy-Regular.eot?iefix') format('embedded-opentype'),
+    url('../fonts/LuckiestGuy-Regular/LuckiestGuy-Regular.woff') format('woff'),
+    url('../fonts/LuckiestGuy-Regular/LuckiestGuy-Regular.ttf') format('truetype'),
+    url('../fonts/LuckiestGuy-Regular/LuckiestGuy-Regular.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
