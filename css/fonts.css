@@ -32,12 +32,12 @@
 }
 
 @font-face{
-    font-family: 'LuckiestGuy-Regular';
-    src: url('../fonts/LuckiestGuy-Regular/LuckiestGuy-Regular.eot');
-    src: url('../fonts/LuckiestGuy-Regular/LuckiestGuy-Regular.eot?iefix') format('embedded-opentype'),
-    url('../fonts/LuckiestGuy-Regular/LuckiestGuy-Regular.woff') format('woff'),
-    url('../fonts/LuckiestGuy-Regular/LuckiestGuy-Regular.ttf') format('truetype'),
-    url('../fonts/LuckiestGuy-Regular/LuckiestGuy-Regular.svg#webfont') format('svg');
+    font-family: 'klinik-BoldItalic';
+    src: url('../fonts/klinik-BoldItalic/klinik-BoldItalic.eot');
+    src: url('../fonts/klinik-BoldItalic/klinik-BoldItalic.eot?iefix') format('embedded-opentype'),
+    url('../fonts/klinik-BoldItalic/klinik-BoldItalic.woff') format('woff'),
+    url('../fonts/klinik-BoldItalic/klinik-BoldItalic.ttf') format('truetype'),
+    url('../fonts/klinik-BoldItalic/klinik-BoldItalic.svg#webfont') format('svg');
     font-weight: normal;
     font-style: normal;
 }
