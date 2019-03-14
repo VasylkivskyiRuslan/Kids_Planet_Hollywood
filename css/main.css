@@ -55,12 +55,22 @@ body .content .firstBlock .firstBlock__info {
   margin: 20px 0 0 20px;
 }
 body .content .firstBlock .firstBlock__info li {
-  list-style: disc;
   color: #bf172a;
+  position: relative;
 }
 body .content .firstBlock .firstBlock__info li p {
   font: 1.25em/2em "HeliosCond-Bold";
   color: #bf172a;
+}
+body .content .firstBlock .firstBlock__info li:before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 15px;
+  left: -15px;
+  background-image: url("../img/point_red.png");
+  background-size: 7px 7px;
 }
 body .content .firstBlock button {
   margin: 20px 0 0;
@@ -153,14 +163,30 @@ body .content .fourthBlock .category .debutant ul,
 body .content .fourthBlock .category .nominee ul,
 body .content .fourthBlock .category .superstar ul {
   margin: 0 0 0 20px;
-  list-style: disc;
   color: #fff;
+}
+body .content .fourthBlock .category .debutant ul li,
+body .content .fourthBlock .category .nominee ul li,
+body .content .fourthBlock .category .superstar ul li {
+  position: relative;
 }
 body .content .fourthBlock .category .debutant ul li p,
 body .content .fourthBlock .category .nominee ul li p,
 body .content .fourthBlock .category .superstar ul li p {
   font: 1.5em/1.5em "HeliosCond-Bold";
   color: #fff;
+}
+body .content .fourthBlock .category .debutant ul li:before,
+body .content .fourthBlock .category .nominee ul li:before,
+body .content .fourthBlock .category .superstar ul li:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 15px;
+  left: -15px;
+  background-image: url("../img/point_white.png");
+  background-size: 10px 10px;
 }
 body .content .fourthBlock button {
   margin: -10px 0 0;
@@ -237,19 +263,14 @@ body .content .sixthBlock {
 body .content .sixthBlock .sixthBlock__headline {
   margin: 30px 0 0;
 }
-body .content .sixthBlock .sixthBlock__headline h6 {
-  font: 7.5em/1em "AdigianaUltra";
-  color: #15828c;
-  text-shadow: 10px 0 20px #fff, 0 10px 20px #fff, -10px 0 20px #fff, 0 -10px 20px #fff;
-  -webkit-transform: rotate(-4deg);
-  -ms-transform: rotate(-4deg);
-  transform: rotate(-4deg);
+body .content .sixthBlock .sixthBlock__headline img {
+  width: 90%;
 }
 body .content .sixthBlock .sixthBlock__info {
   margin: 30px 0 0;
 }
 body .content .sixthBlock .sixthBlock__info ul {
-  margin: 110px 0 0;
+  margin: 70px 0 0;
 }
 body .content .sixthBlock .sixthBlock__info ul li {
   margin: 40px 0;
@@ -320,14 +341,17 @@ body .content .seventhBlock .seventhBlock__contacts li:nth-child(3) p {
 body .content .seventhBlock .seventhBlock__logo {
   margin: 65px 0 0;
 }
-body .content .seventhBlock .seventhBlock__map {
+body .content .seventhBlock .seventhBlock__map,
+body .content .seventhBlock .seventhBlock__map__mobile {
   position: relative;
   height: 500px;
 }
-body .content .seventhBlock .seventhBlock__map div {
+body .content .seventhBlock .seventhBlock__map div,
+body .content .seventhBlock .seventhBlock__map__mobile div {
   position: absolute;
 }
-body .content .seventhBlock .seventhBlock__map div ul {
+body .content .seventhBlock .seventhBlock__map div ul,
+body .content .seventhBlock .seventhBlock__map__mobile div ul {
   position: relative;
   background: #fff;
   -webkit-box-sizing: border-box;
@@ -336,19 +360,23 @@ body .content .seventhBlock .seventhBlock__map div ul {
   -webkit-box-shadow: 5px 5px 20px #fff, -5px -5px 20px #fff, 5px -5px 20px #fff, -5px 5px 20px #fff;
   box-shadow: 5px 5px 20px #fff, -5px -5px 20px #fff, 5px -5px 20px #fff, -5px 5px 20px #fff;
 }
-body .content .seventhBlock .seventhBlock__map div ul li:nth-child(1) p {
+body .content .seventhBlock .seventhBlock__map div ul li:nth-child(1) p,
+body .content .seventhBlock .seventhBlock__map__mobile div ul li:nth-child(1) p {
   font: 1.5em/1em "AdigianaUltra";
   color: #ce2622;
 }
-body .content .seventhBlock .seventhBlock__map div ul li:nth-child(2) p {
+body .content .seventhBlock .seventhBlock__map div ul li:nth-child(2) p,
+body .content .seventhBlock .seventhBlock__map__mobile div ul li:nth-child(2) p {
   font: 1em/1em "HeliosCond-Bold";
   color: #000;
 }
-body .content .seventhBlock .seventhBlock__map div ul li:nth-child(3) p {
+body .content .seventhBlock .seventhBlock__map div ul li:nth-child(3) p,
+body .content .seventhBlock .seventhBlock__map__mobile div ul li:nth-child(3) p {
   font: 1em/1em "HeliosCondC";
   color: #000;
 }
-body .content .seventhBlock .seventhBlock__map div ul:after {
+body .content .seventhBlock .seventhBlock__map div ul:after,
+body .content .seventhBlock .seventhBlock__map__mobile div ul:after {
   content: "";
   position: absolute;
   width: 0;
@@ -366,84 +394,110 @@ body .content .seventhBlock .seventhBlock__map div ul:after {
   box-shadow: -5px 5px 20px #fff;
 }
 body .content .seventhBlock .seventhBlock__map .lvov ul li:nth-child(2) p,
+body .content .seventhBlock .seventhBlock__map__mobile .lvov ul li:nth-child(2) p,
 body .content .seventhBlock .seventhBlock__map .zaporozhye ul li:nth-child(2) p,
-body .content .seventhBlock .seventhBlock__map .poltava ul li:nth-child(2) p {
+body .content .seventhBlock .seventhBlock__map__mobile .zaporozhye ul li:nth-child(2) p,
+body .content .seventhBlock .seventhBlock__map .poltava ul li:nth-child(2) p,
+body .content .seventhBlock .seventhBlock__map__mobile .poltava ul li:nth-child(2) p {
   font-family: HeliosCondC;
 }
 body .content .seventhBlock .seventhBlock__map .lvov ul:after,
+body .content .seventhBlock .seventhBlock__map__mobile .lvov ul:after,
 body .content .seventhBlock .seventhBlock__map .khmelnytckyi ul:after,
+body .content .seventhBlock .seventhBlock__map__mobile .khmelnytckyi ul:after,
 body .content .seventhBlock .seventhBlock__map .poltava ul:after,
+body .content .seventhBlock .seventhBlock__map__mobile .poltava ul:after,
 body .content .seventhBlock .seventhBlock__map .kharkov ul:after,
+body .content .seventhBlock .seventhBlock__map__mobile .kharkov ul:after,
 body .content .seventhBlock .seventhBlock__map .zaporozhye ul:after,
-body .content .seventhBlock .seventhBlock__map .odessa ul:after {
+body .content .seventhBlock .seventhBlock__map__mobile .zaporozhye ul:after,
+body .content .seventhBlock .seventhBlock__map .odessa ul:after,
+body .content .seventhBlock .seventhBlock__map__mobile .odessa ul:after {
   top: 0;
   left: 60px;
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
 }
-body .content .seventhBlock .seventhBlock__map .kyiv {
+body .content .seventhBlock .seventhBlock__map .kyiv,
+body .content .seventhBlock .seventhBlock__map__mobile .kyiv {
   top: -60px;
   left: 26%;
 }
-body .content .seventhBlock .seventhBlock__map .kyiv ul li:nth-child(even) {
+body .content .seventhBlock .seventhBlock__map .kyiv ul li:nth-child(even),
+body .content .seventhBlock .seventhBlock__map__mobile .kyiv ul li:nth-child(even) {
   font: 1em/1em "HeliosCond-Bold";
 }
-body .content .seventhBlock .seventhBlock__map .kyiv ul li:nth-child(odd) {
+body .content .seventhBlock .seventhBlock__map .kyiv ul li:nth-child(odd),
+body .content .seventhBlock .seventhBlock__map__mobile .kyiv ul li:nth-child(odd) {
   font: 1em/1em "HeliosCondC";
 }
-body .content .seventhBlock .seventhBlock__map .kyiv ul:after {
+body .content .seventhBlock .seventhBlock__map .kyiv ul:after,
+body .content .seventhBlock .seventhBlock__map__mobile .kyiv ul:after {
   top: 120px;
   left: 220px;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-body .content .seventhBlock .seventhBlock__map .chernigov {
+body .content .seventhBlock .seventhBlock__map .chernigov,
+body .content .seventhBlock .seventhBlock__map__mobile .chernigov {
   top: -40px;
   left: 57%;
 }
-body .content .seventhBlock .seventhBlock__map .chernigov ul:after {
+body .content .seventhBlock .seventhBlock__map .chernigov ul:after,
+body .content .seventhBlock .seventhBlock__map__mobile .chernigov ul:after {
   top: 1px;
   left: 8px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-body .content .seventhBlock .seventhBlock__map .khmelnytckyi {
+body .content .seventhBlock .seventhBlock__map .khmelnytckyi,
+body .content .seventhBlock .seventhBlock__map__mobile .khmelnytckyi {
   top: 135px;
   left: 25%;
 }
-body .content .seventhBlock .seventhBlock__map .kharkov {
+body .content .seventhBlock .seventhBlock__map .kharkov,
+body .content .seventhBlock .seventhBlock__map__mobile .kharkov {
   top: 140px;
   left: 73%;
 }
-body .content .seventhBlock .seventhBlock__map .lvov {
+body .content .seventhBlock .seventhBlock__map .lvov,
+body .content .seventhBlock .seventhBlock__map__mobile .lvov {
   top: 100px;
   left: 12%;
 }
-body .content .seventhBlock .seventhBlock__map .dnepropetrovsk {
+body .content .seventhBlock .seventhBlock__map .dnepropetrovsk,
+body .content .seventhBlock .seventhBlock__map__mobile .dnepropetrovsk {
   top: 240px;
   left: 51%;
 }
-body .content .seventhBlock .seventhBlock__map .dnepropetrovsk ul:after {
+body .content .seventhBlock .seventhBlock__map .dnepropetrovsk ul:after,
+body .content .seventhBlock .seventhBlock__map__mobile .dnepropetrovsk ul:after {
   top: 0;
   left: 190px;
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
 }
-body .content .seventhBlock .seventhBlock__map .odessa {
+body .content .seventhBlock .seventhBlock__map .odessa,
+body .content .seventhBlock .seventhBlock__map__mobile .odessa {
   top: 320px;
   left: 42%;
 }
-body .content .seventhBlock .seventhBlock__map .zaporozhye {
+body .content .seventhBlock .seventhBlock__map .zaporozhye,
+body .content .seventhBlock .seventhBlock__map__mobile .zaporozhye {
   top: 310px;
   left: 70%;
 }
-body .content .seventhBlock .seventhBlock__map .poltava {
+body .content .seventhBlock .seventhBlock__map .poltava,
+body .content .seventhBlock .seventhBlock__map__mobile .poltava {
   top: 120px;
   left: 60%;
+}
+body .content .seventhBlock .seventhBlock__map__mobile {
+  display: none;
 }
 body .content .seventhBlock button {
   margin: -40px 0 0;
